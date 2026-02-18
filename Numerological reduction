@@ -1,0 +1,20 @@
+def findNumerologicalReduction(n):
+    # Repeat until single digit
+    while n >= 10:
+        digit_sum = 0
+        loop = 1
+        # Sum digits of n
+        while n > 0:
+            print("loop", loop)
+            print(n)
+            digit_sum = digit_sum + n % 10
+            n //= 10
+            print(n)
+            loop = loop+1
+        
+        n = digit_sum
+    
+    return n
+print(findNumerologicalReduction(123))
+
+
