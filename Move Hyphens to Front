@@ -1,0 +1,8 @@
+def move_hyphen(s):
+    if s is None:
+        return None
+
+    hyphen_count = s.count('-')
+    return '-' * hyphen_count + s.replace('-', '')
+
+print(move_hyphen("--Example-"))
