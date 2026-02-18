@@ -1,0 +1,10 @@
+def BalanceFruits(a, m, rs):
+    if a > m:
+        rs -= (a - m)   # buy mangoes
+    elif a < m:
+        rs += (m - a)   # sell mangoes
+    return rs
+
+
+print(BalanceFruits(8, 4, 6))  # Output: 2
+print(BalanceFruits(4, 7, 6))  # Output: 9
